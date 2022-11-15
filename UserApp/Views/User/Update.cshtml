@@ -1,0 +1,27 @@
+﻿@model User
+<html>
+<head>
+	<title>
+
+	</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+	<form method="post" asp-action="Update" asp-controller="User">
+		User Id :
+		<br />
+		<input type="text" asp-for="Id" class="form-control" />
+		<br />
+		User Name :
+		<br />
+		<input type="text" asp-for="Name" class="form-control" />
+		<br />
+		User Address :
+		<br />
+		<input type="text" asp-for="Address" class="form-control" />
+		<br />
+
+		<button class="btn btn-primary">submit</button>
+	</form>
+</body>
+</html>
